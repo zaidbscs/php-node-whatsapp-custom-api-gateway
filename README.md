@@ -1,3 +1,5 @@
+![PHP & Node.js](https://readmecraft.free.nf/uploads/banner_6ab3b522437e7.png)
+
 This is the restructured README, cleanly split into **Part 1 (The PHP Website & Database)** first, followed completely by **Part 2 (The Node.js WhatsApp Bot)**.
 
 ```markdown
