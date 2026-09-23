@@ -1,4 +1,4 @@
-Here is the restructured README, cleanly split into **Part 1 (The PHP Website & Database)** first, followed completely by **Part 2 (The Node.js WhatsApp Bot)**.
+This is the restructured README, cleanly split into **Part 1 (The PHP Website & Database)** first, followed completely by **Part 2 (The Node.js WhatsApp Bot)**.
 
 ```markdown
 # PHP & Node.js WhatsApp Messages Custom API Gateway
