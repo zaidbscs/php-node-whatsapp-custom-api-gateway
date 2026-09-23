@@ -1,9 +1,16 @@
 This is the restructured README, cleanly split into **Part 1 (The PHP Website & Database)** first, followed completely by **Part 2 (The Node.js WhatsApp Bot)**.
 
 ```markdown
-# PHP & Node.js WhatsApp Messages Custom API Gateway
+# PHP & Node.js WhatsApp Custom API Gateway
 
-A robust, self-hosted integration that bridges a PHP web interface with a Node.js WhatsApp bot. It allows you to queue messages through a website dashboard, have a Node.js bot poll for pending messages[cite: 3], send them via WhatsApp, and automatically sync their delivery status back to the database[cite: 5].
+A robust, self-hosted integration built using the **Baileys library** that bridges a PHP web interface with a Node.js WhatsApp bot[cite: 3, 5, 6, 7]. It allows you to queue messages through a website dashboard, have a Node.js bot poll for pending messages[cite: 3], send them via WhatsApp, and automatically sync their delivery status back to the database[cite: 5].
+
+---
+
+## 💡 Use Cases & Why You Need This
+* **Custom API Key Triggering:** Send automated messages programmatically from external websites or apps using your own API keys.
+* **New User Notifications:** Instantly alert yourself or your admins via WhatsApp whenever a new user registers or signs up on your platform.
+* **Personal Site Notifications:** Receive real-time system alerts, error logs, or form submissions straight to your personal WhatsApp number.
 
 ---
 
@@ -17,7 +24,7 @@ A robust, self-hosted integration that bridges a PHP web interface with a Node.j
 │   └── update-status.php      # API endpoint to update message status[cite: 5]
 │
 └── node-bot/
-    ├── index.js               # WhatsApp bot core polling script[cite: 6]
+    ├── index.js               # WhatsApp bot core polling script (Baileys powered)[cite: 6]
     ├── package.json           # Node dependencies configuration[cite: 7]
     └── auth_info_baileys/     # WhatsApp session folder (generated after scanning QR)[cite: 6]
 
@@ -101,7 +108,7 @@ To bypass terminal session restrictions on cPanel:
 2. Go to **Setup Node.js App** in cPanel and click **Create Application**.
 3. Select your Node.js version (v18+), set application mode to **Production**, link it to your subdomain directory, and set the startup file to `index.js`.
 4. Upload and extract your zipped bot folder directly into that subdomain directory.
-5. Click **Restart** in the cPanel Node.js application manager. Your bot will now run continuously, fetch pending messages from your PHP backend, send them, and update statuses back automatically!
+5. Click **Restart** in the cPanel Node.js application manager. Your Baileys-powered bot will now run continuously, fetch pending messages from your PHP backend, send them, and update statuses back automatically!
 
 
 
@@ -120,15 +127,7 @@ To bypass terminal session restrictions on cPanel:
 
 ---
 
-## 📝 License
-
-This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE&utm_source=gemini).
 
 ```
-
-<Elicitations message="How does this separated structure look to you?">
-  <Elicitation label="Looks great, I'm ready" query="This structure looks great, thank you!"/>
-  <Elicitation label="Make minor text tweaks" query="I'd like to adjust some wording in the README."/>
-</Elicitations>
 
 ```
