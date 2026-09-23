@@ -1,7 +1,7 @@
 This is the restructured README, cleanly split into **Part 1 (The PHP Website & Database)** first, followed completely by **Part 2 (The Node.js WhatsApp Bot)**.
 
 ```markdown
-# PHP & Node.js WhatsApp Custom API Gateway
+# PHP & Node.js WhatsApp Message Custom API Gateway
 
 A robust, self-hosted integration built using the **Baileys library** that bridges a PHP web interface with a Node.js WhatsApp bot[cite: 3, 5, 6, 7]. It allows you to queue messages through a website dashboard, have a Node.js bot poll for pending messages[cite: 3], send them via WhatsApp, and automatically sync their delivery status back to the database[cite: 5].
 
