@@ -128,6 +128,9 @@ To bypass terminal session restrictions on cPanel:
 ---
 
 
-```
+📝 License
+This project is open-source and available under the MIT License.
+
+
 
 ```
